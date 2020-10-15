@@ -37,10 +37,11 @@ class Squash(Melon):
     
     def __init__(self, melon_type):
         """Initialize Squash object"""
+
         super().__init__(melon_type)
     
     def prep(self):
-        """Invoke the paint bot to change squash color"""
+        """Prepare the squash."""
         
         robots.cleanerbot.clean(self)
         robots.stickerbot.apply_logo(self)
